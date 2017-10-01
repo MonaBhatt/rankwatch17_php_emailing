@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title>Write a PHP script that accepts email address, Subject and Message. Send the Message
+and Subject to email address using SMTP services like mailgun, mandrill/mailchimp etc. You
+can use any mail service as you desire</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="jumbotron text-center">
+  <h1>Problem Statement 2</h1>
+  <p>Write a PHP script that accepts email address, Subject and Message. Send the Message
+and Subject to email address using SMTP services like mailgun, mandrill/mailchimp etc. You
+can use any mail service as you desire</p> 
+</div>
+  
+<section id="contact">
+			<div class="section-content">
+				<h1 class="section-header text-center">Get in <span class="content-header wow fadeIn "> Touch with us</span></h1>
+				
+			</div>
+			<div class="contact-section">
+			<div class="container">
+				<form action="send_mail.php" method="post">
+					<div class="col-md-12 form-line">
+						<div class="form-group">
+					    	<label for="exampleInputEmail">Email Address (*)</label>
+					    	<input type="email" class="form-control" name="email" id="exampleInputEmail" placeholder=" Enter Email id" required>
+					  	</div>	
+			  			<div class="form-group">
+			  				<label for="subject">Subject (*)</label>
+					    	<input type="text" name="subject" class="form-control" id="subject" placeholder=" Enter Subject" required>
+				  		</div>
+				  		
+					  	<div class="form-group">
+					    	<label for ="description"> Message (*)</label>
+			  			 	<textarea  class="form-control" id="description" name="message" placeholder="Enter Your Message" required></textarea>
+			  			</div>
+						<button type="submit" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+			  		</div>
+			  		
+				</form>
+			</div>
+		</section>
+</body>
+</html>
